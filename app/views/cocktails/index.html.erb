@@ -1,5 +1,10 @@
-<h1>Cocktails</h1>
-<br>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1541975902628-b157a9411603?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80);">
+  <div class="container">
+    <h1>Discover<strong>new tastes</strong> tonight!</h1>
+    <p>Set your curiosity free, try a new cocktail and relax</p>
+  </div>
+</div>
+
 <div class="list-group">
 <% @cocktails.each do |cocktail| %>
   <%= link_to "#{cocktail.name}", cocktail_path(cocktail), class: "list-group-item list-group-item-action" %>
