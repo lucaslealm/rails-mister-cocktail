@@ -13,11 +13,11 @@
           <div class="card-product">
             <%= cl_image_tag cocktail.photo, crop: :fill %>
             <div class="card-product-infos">
-              <h2><%= cocktail.name.capitalize %></h2>
+              <h2><%= cocktail.name.titleize %></h2>
               <p><strong>Ingredients:</strong> </p>
               <% cocktail.ingredients.each do |ingredient| %>
               <ul class="list-line">
-                <li><%= ingredient.name.capitalize + " "%></li>
+                <li><%= ingredient.name.titleize + " "%></li>
               </ul>
               <% end %>
             </div>
