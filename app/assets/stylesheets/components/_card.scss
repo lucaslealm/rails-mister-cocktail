@@ -35,4 +35,8 @@
 .unstyled {
   text-decoration: none;
   color: black;
+  &:hover {
+    opacity: 0.8;
+    color: black;
+  }
 }
