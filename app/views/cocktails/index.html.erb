@@ -8,20 +8,22 @@
 <div class="layout-container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-product">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
-          <div class="card-product-infos">
-            <h2><%= cocktail.name.capitalize %></h2>
-            <p><strong>Ingredients:</strong> </p>
-            <% cocktail.ingredients.each do |ingredient| %>
-            <ul class="list-line">
-              <li><%= ingredient.name.capitalize + " "%></li>
-            </ul>
-            <% end %>
+      <a class="unstyled" href=<%= "/cocktails/#{cocktail.id}" %>>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card-product">
+            <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg">
+            <div class="card-product-infos">
+              <h2><%= cocktail.name.capitalize %></h2>
+              <p><strong>Ingredients:</strong> </p>
+              <% cocktail.ingredients.each do |ingredient| %>
+              <ul class="list-line">
+                <li><%= ingredient.name.capitalize + " "%></li>
+              </ul>
+              <% end %>
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     <% end %>
   </div>
 </div>
