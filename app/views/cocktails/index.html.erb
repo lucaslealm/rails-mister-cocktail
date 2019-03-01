@@ -11,7 +11,7 @@
       <a class="unstyled" href=<%= "/cocktails/#{cocktail.id}" %>>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="card-product">
-            <img src="https://www.californiastrawberries.com/wp-content/uploads/2017/03/Strawberry-Muddle-Cocktail.jpg">
+            <%= cl_image_tag cocktail.photo, crop: :fill %>
             <div class="card-product-infos">
               <h2><%= cocktail.name.capitalize %></h2>
               <p><strong>Ingredients:</strong> </p>
